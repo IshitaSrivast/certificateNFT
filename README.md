@@ -18,7 +18,7 @@ To get started with this project, follow these steps:
 
 ```bash
 git clone https://github.com/IshitaSrivast/certificateNFT
-cd certificate-nft-project
+cd certificateNFT
 ```
 
 2. **Install dependencies**
