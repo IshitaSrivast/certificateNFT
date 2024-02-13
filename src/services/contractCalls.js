@@ -1,5 +1,14 @@
 import { ethers } from "ethers";
-import { contract } from "./config";
+import { contractDetails } from "./abi";
+
+const provider = new ethers.BrowserProvider(window.ethereum);
+await provider.send("eth_requestAccounts", []);
+const signer = await provider.getSigner();
+export const contract = new ethers.Contract(
+  contractDetails.address,
+  contractDetails.abi,
+  signer
+);
 
 export async function mintCertificate(
   recipient,

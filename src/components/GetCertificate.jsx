@@ -29,6 +29,7 @@ function GetCertificateDetails(account) {
             <p>Name: {item.name}</p>
             <p>Course: {item.date}</p> {/* Display the raw date value */}
             <p>Issuer: {item.issuer}</p>
+            <p>ID: {item.callTokenId}</p>
           </div>
         </div>
       ))}
